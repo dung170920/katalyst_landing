@@ -1,26 +1,81 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --white: #ffffff;
+  --black: #000000;
+  --grayscale-900: #101010;
+  --grayscale-800: #222222;
+  --grayscale-700: #2a2a2a;
+  --grayscale-600: #303030;
+  --grayscale-500: #444444;
+  --grayscale-400: #888888;
+  --grayscale-300: #AAAAAA;
+  --grayscale-200: #DDDDDD;
+  --grayscale-100: #F0F0F0;
+  --grayscale-50: #FAFAFA;
+  --primary: #9DFF50;
+  --radius-sm: 16px;
+  --radius: 24px;
+  --radius-lg: 32px;
+  --radius-xl: 56px;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-archivo);
+  --font-mono: var(--font-monument-extended);
+  --color-white: var(--white);
+  --color-black: var(--black);
+  --color-grayscale-900: var(--grayscale-900);
+  --color-grayscale-800: var(--grayscale-800);
+  --color-grayscale-700: var(--grayscale-700);
+  --color-grayscale-600: var(--grayscale-600);
+  --color-grayscale-500: var(--grayscale-500);
+  --color-grayscale-400: var(--grayscale-400);
+  --color-grayscale-300: var(--grayscale-300);
+  --color-grayscale-200: var(--grayscale-200);
+  --color-grayscale-100: var(--grayscale-100);
+  --color-grayscale-50: var(--grayscale-50);
+  --color-primary: var(--primary);
+  --radius-sm: var(--radius-sm);
+  --radius: var(--radius);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+  --aspect-retro: 3 / 4;
+  --aspect-thumbnail: 4 / 3;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply bg-white text-grayscale-800 font-sans;
+  }
+
+  .container {
+    @apply mx-auto;
+  }
+
+  .fs-80 {
+    @apply xl:text-[80px] text-4xl;
+  }
+
+  .fs-72 {
+    @apply xl:text-7xl text-3xl;
+  }
+
+  .fs-48 {
+    @apply xl:text-5xl text-2xl;
+  }
+
+  .fs-40 {
+    @apply xl:text-[40px] text-xl;
+  }
+
+  .fs-32 {
+    @apply xl:text-[32px] text-xl;
+  }
+
+  .fs-24 {
+    @apply xl:text-2xl text-lg;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+@layer components {}
