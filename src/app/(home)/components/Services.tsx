@@ -43,7 +43,7 @@ const Services = () => {
         </h3>
         <p className='text-grayscale-500 text-xl leading-relaxed'>Despite being a small team, we believe that our size gives us an advantage, allowing us to be nimble, adaptable, and able to work closely with our clients to deliver truly awesome designs.</p>
       </div>
-      <div className="container flex flex-col md:flex-row mt-1.5 lg:gap-10 gap-5 w-full relative px-6 md:px-12">
+      <div className="container flex flex-col md:flex-row mt-1.5 lg:gap-10 gap-5 w-full relative px-6 md:px-12 lg:px-0">
         <Image src={"/star.svg"} alt='star' height={80} width={80} className='absolute -left-8' />
         <div className="aspect-video md:rounded-lg rounded md:mt-11 flex-2 overflow-hidden">
           <Image src="https://images.unsplash.com/photo-1552581234-26160f608093?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGRpZ2l0YWwlMjBhZ2VuY3l8ZW58MHx8MHx8fDA%3D" alt='' height={1000} width={1000} className='w-full h-full' />
