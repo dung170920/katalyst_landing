@@ -43,7 +43,7 @@ const Services = () => {
         </h3>
         <p className='text-grayscale-500 text-xl leading-relaxed'>Despite being a small team, we believe that our size gives us an advantage, allowing us to be nimble, adaptable, and able to work closely with our clients to deliver truly awesome designs.</p>
       </div>
-      <div className="container flex flex-col md:flex-row mt-1.5 lg:gap-10 gap-5 w-full relative px-6 md:px-12 lg:px-0">
+      <div className="container flex flex-col md:flex-row mt-1.5 lg:gap-10 gap-5 w-full relative px-6 md:px-12 xl:px-0">
         <Image src={"/star.svg"} alt='star' height={80} width={80} className='absolute -left-8' />
         <div className="aspect-video md:rounded-lg rounded md:mt-11 flex-2 overflow-hidden">
           <Image src="https://images.unsplash.com/photo-1552581234-26160f608093?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGRpZ2l0YWwlMjBhZ2VuY3l8ZW58MHx8MHx8fDA%3D" alt='' height={1000} width={1000} className='w-full h-full' />
@@ -62,7 +62,7 @@ const Services = () => {
         </div>
         </h3>
         <TabGroup>
-          <div className="container flex gap-14 flex-col lg:flex-row px-6 md:px-12">
+          <div className="container flex gap-14 flex-col xl:flex-row px-6 md:px-12 xl:px-0">
             <TabList className="flex-1 min-h-full">
               <p className='text-grayscale-500 text-xl leading-relaxed lg:mb-10 mb-5 lg:pl-0 md:pl-3 pl-8'>Katalyst Studio offers a range of design services tailored to each client</p>
               <ul className='flex flex-col gap-8'>
@@ -71,7 +71,7 @@ const Services = () => {
                     key={item.id}
                     className={({ selected }) =>
                       cn(
-                        'flex items-center gap-6 lg:text-2xl text-base rounded-full lg:px-10 lg:py-8 px-5 py-4 cursor-pointer focus:not-data-focus:outline-none',
+                        'flex items-center gap-6 xl:text-xl text-base rounded-full px-5 py-4 lg:px-8 lg:py-6 cursor-pointer focus:not-data-focus:outline-none',
                         selected
                           ? 'bg-grayscale-900 text-white font-semibold'
                           : 'bg-transparent text-grayscale-500 border border-grayscale-200 font-medium'
@@ -102,19 +102,19 @@ const Services = () => {
                       className='w-full h-full object-cover rounded-lg'
                     />
                   </div>
-                  <div className="col-span-1 row-span-1 rounded-lg bg-grayscale-700 text-white p-6 xl:p-14 flex justify-between flex-col">
+                  <div className="col-span-1 row-span-1 rounded-lg bg-grayscale-700 text-white p-6 xl:p-9 flex justify-between flex-col">
                     <p className="text-lg leading-relaxed">Ever wondered how design magic happens?</p>
                     <Link href="/" className='w-full flex items-center gap-3.5'>
-                      <span className='lg:text-[28px] text-xl font-semibold leading-snug'>See how we work</span>
+                      <span className='lg:text-[24px] text-xl font-semibold leading-snug'>See how we work</span>
                       <span className='size-16 rounded-full bg-grayscale-600 flex-shrink-0 flex items-center justify-center'>
                         <ArrowUpRight variant='filled' size={24} />
                       </span>
                     </Link>
                   </div>
-                  <div className="col-span-1 row-span-1 rounded-lg bg-primary p-6 xl:p-14 flex justify-between flex-col">
+                  <div className="col-span-1 row-span-1 rounded-lg bg-primary p-6 xl:p-9 flex justify-between flex-col">
                     <p className="text-lg leading-relaxed">Looking for design experts who can bring your vision to life?</p>
                     <Link href="/" className='w-full flex items-center gap-3.5'>
-                      <span className='lg:text-[28px] text-xl font-semibold leading-snug'>Meet our expert</span>
+                      <span className='lg:text-[24px] text-xl font-semibold leading-snug'>Meet our expert</span>
                       <span className='size-16 rounded-full bg-white flex-shrink-0 flex items-center justify-center'>
                         <ArrowUpRight variant='filled' size={24} />
                       </span>
